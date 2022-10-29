@@ -1,0 +1,171 @@
+.Profile {
+    display: flex;
+    font-size: large;
+    max-height: 80vh;
+    min-height: 80vh;
+}
+
+.Profile hr {
+    border-color: #000000;
+}
+
+.modificar_perfil button {
+    padding: 5px 15px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.modificar_perfil button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #505050;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+.modificar_perfil button:hover {
+    color: #e8e8e8;
+}
+
+.modificar_perfil button:hover::before {
+    width: 100%;
+}
+
+.Profile input {
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #777;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #000000;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.Profile input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #7a9cc6;
+}
+
+.Profile input::placeholder {
+    color: #777;
+}
+
+.Profile input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.User_options_conteiner {
+    width: 30%;
+}
+
+.User_data_conteiner {
+    width: 70%;
+    padding: 3%;
+}
+
+.User_options {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.User_options div {
+    text-align: -webkit-center;
+}
+
+.User_options img {
+    object-fit: cover;
+    border-radius: 25px;
+    max-width: 50%;
+    margin-top: 5%;
+}
+
+.User_data {
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.Form button {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#submit {
+    margin-top: 5%;
+}
+
+#edit_img {
+    margin-left: 0%;
+}
+
+#imagenPerfil {
+    max-width: 30%;
+    border-radius: 100%;
+}
+
+.profile-game-list {
+    font-size: small;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.profile-game-list:hover {
+    backdrop-filter: blur(1px);
+    border-radius: 29px;
+    margin: 2%;
+    background-color: #ffffff7f;
+}
+
+.modificar_perfil span {
+    color: red;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.modificar_perfil h1 {
+    color: #000000;
+}
+
+.modificar_perfil h2 {
+    color: rgb(34, 34, 34)
+}
+
+
+.Label_user {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.shadow-div {
+    border-radius: 25px;
+    height: 70%;
+    margin: 100px 20px 100px 20px;
+    box-shadow: 1px 1px 16px 4px rgba(114, 113, 113, 0.634);
+    -webkit-box-shadow: 1px 1px 16px 4px rgba(114, 113, 113, 0.634);
+    -moz-box-shadow: 1px 1px 16px 4px rgba(114, 113, 113, 0.634);
+}

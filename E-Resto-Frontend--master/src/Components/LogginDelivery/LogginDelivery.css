@@ -1,0 +1,20 @@
+.loggin-delivery-conteiner {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginDeliveryNavBar{
+    padding: 1%;
+    border-bottom: white 1px solid;
+}
+.loginDeliveryNavBar a {
+    display: flex;
+}
+
+.loginDeliveryNavBar p {
+    margin-left: 1%;
+}
+.loginDeliveryNavBar:hover{
+    cursor: pointer;
+}

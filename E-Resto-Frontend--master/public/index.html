@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <title>Henry's Resto Proyect</title>
+  <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+
+    // // Whenever the user explicitly chooses light mode
+    // localStorage.theme = 'light'
+
+    // // Whenever the user explicitly chooses dark modef
+    // localStorage.theme = 'dark'
+
+    // // Whenever the user explicitly chooses to respect the OS preference
+    // localStorage.removeItem('theme')
+  </script>
+
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <!-- Código de instalación Cliengo para localhost:3000 -->
+  <script
+    type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/634865dad39766002a23b9f6/634865dcd39766002a23b9f9.js?platform=view_installation_code'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+  </div>
+
+</body>
+
+</html>
